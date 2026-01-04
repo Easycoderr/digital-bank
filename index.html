@@ -39,8 +39,93 @@
     </script>
   </head>
   <body>
-    <h1 class="text-5xl font-sans">Hello world</h1>
+    <!-- header -->
+    <header id="header">
+      <div
+        class="container mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
+      >
+        <!-- logo -->
+        <img
+          src="assets/images/logo-dark.svg"
+          alt="digital bank logo"
+          class=""
+        />
+        <!-- nav -->
+        <nav>
+          <ul class="flex flex-row text-sm gap-6">
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-400 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Home
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-400 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                About
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-400 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Contact
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-400 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Blog
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-400 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Careers
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+          </ul>
+        </nav>
+        <!--
+    Request Invite button  -->
+        <button
+          class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
+        >
+          Request Invite
+        </button>
+      </div>
+    </header>
+
     <!-- 
+    sm	640px	@media (min-width: 640px) { ... }
+   md	768px	@media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+  xl	1280px	@media (min-width: 1280px) { ... }
+  2xl	1536px	@media (min-width: 1536px) { ... }
   Home
   About
   Contact
