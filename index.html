@@ -42,7 +42,7 @@
     <!-- header -->
     <header id="header">
       <div
-        class="container mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
+        class="container z-50 mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
       >
         <!-- logo -->
         <img
@@ -52,7 +52,7 @@
         />
         <!-- nav -->
         <nav>
-          <ul class="flex flex-row text-sm gap-6">
+          <ul class="flex-row text-sm gap-6 md:flex hidden">
             <li class="group cursor-pointer">
               <a
                 href=""
@@ -113,12 +113,64 @@
         <!--
     Request Invite button  -->
         <button
+          title="Click to Request Invite"
+          aria-label="Request Invite"
           class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
         >
           Request Invite
         </button>
       </div>
     </header>
+    <!-- hero  -->
+    <section
+      id="hero"
+      class="overflow-hidden min-h-screen bg-gray-50 py-40 relative"
+    >
+      <div
+        class="container mx-auto p-2 md:p-8 xl:px-32 grid grid-cols-1 md:grid-cols-2"
+      >
+        <!-- text content -->
+        <div
+          class="text-left sm:max-w-[29rem] mx-auto space-y-8 z-20 text-center md:text-left md:m-0 sm:mt-[38rem] mt-[20rem]"
+        >
+          <h1 class="z-20 text-5xl text-gray-800 tracking-tight leading-tight">
+            Next generation digital banking
+          </h1>
+          <p
+            class="text-gray-500 leading-tight sm:leading-relaxed max-w-[24rem] mx-auto md:mx-0 z-20"
+          >
+            Take your financial life online. Your Digitalbank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button
+            title="Click to Request Invite z-20"
+            aria-label="Request Invite"
+            class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
+          >
+            Request Invite
+          </button>
+        </div>
+        <!-- image -->
+        <div>
+          <img
+            src="assets/images/bg-intro-desktop.svg"
+            alt="into desktop"
+            class="absolute -top-64 -right-[28.5rem] z-10 md:block hidden"
+          />
+          <img
+            src="assets/images/bg-intro-mobile.svg"
+            alt="into mobile bg"
+            class="absolute top-0 right-0 z-10 md:hidden"
+          />
+          <img
+            src="assets/images/image-mockups.png"
+            alt="mockups image"
+            class="absolute -top-40 md:-right-32 z-10 right-0"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- 
     sm	640px	@media (min-width: 640px) { ... }
