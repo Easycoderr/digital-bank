@@ -45,11 +45,7 @@
         class="container z-50 mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
       >
         <!-- logo -->
-        <img
-          src="assets/images/logo-dark.svg"
-          alt="digital bank logo"
-          class=""
-        />
+        <img src="assets/images/logo-dark.svg" alt="digital bank logo" />
         <!-- nav -->
         <nav>
           <ul class="flex-row text-sm gap-6 md:flex hidden">
@@ -115,7 +111,7 @@
         <button
           title="Click to Request Invite"
           aria-label="Request Invite"
-          class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
+          class="md:block hidden bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
         >
           Request Invite
         </button>
@@ -300,7 +296,9 @@
               <span class="text-sm text-gray-400 py-2 inline-block"
                 >By Claire Robinson</span
               >
-              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+              <h3
+                class="text-lg text-gray-800 leading-tight tracking-tight hover:text-green cursor-pointer"
+              >
                 Receive money in any currency with no fees
               </h3>
               <!-- paragraph -->
@@ -326,7 +324,9 @@
                 >By Wilson Hutton</span
               >
 
-              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+              <h3
+                class="text-lg text-gray-800 leading-tight tracking-tight hover:text-green cursor-pointer"
+              >
                 Treat yourself without worrying about money
               </h3>
               <!-- paragraph -->
@@ -351,7 +351,9 @@
               <span class="text-sm text-gray-400 py-2 inline-block"
                 >By Wilson Hutton</span
               >
-              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+              <h3
+                class="text-lg text-gray-800 leading-tight tracking-tight hover:text-green cursor-pointer"
+              >
                 Take your Digitalbank card wherever you go
               </h3>
               <!-- paragraph -->
@@ -377,7 +379,9 @@
               <span class="text-sm text-gray-400 py-2 inline-block"
                 >By Claire Robinson</span
               >
-              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+              <h3
+                class="text-lg text-gray-800 leading-tight tracking-tight hover:text-green cursor-pointer"
+              >
                 Our invite-only Beta accounts are now live!
               </h3>
               <!-- paragraph -->
@@ -391,6 +395,79 @@
         </div>
       </div>
     </section>
+    <!-- Footer -->
+    <footer id="footer" class="bg-blue py-10 z-10">
+      <div
+        class="container grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-20 mx-auto p-2 md:p-8 xl:px-32"
+      >
+        <!-- logo - links -->
+        <div class="flex flex-col gap-16 items-center sm:items-start">
+          <img
+            src="assets/images/logo-light.svg"
+            alt="digital bank logo"
+            class="max-w-36"
+          />
+          <div class="flex items-center gap-2">
+            <a href="#" class="inline-block group"
+              ><img
+                src="assets/images/icon-facebook.svg"
+                alt="facebook logo"
+                class="group-hover:scale-100"
+            /></a>
+            <a href="#" class="inline-block"
+              ><img
+                src="assets/images/icon-youtube.svg"
+                alt="youtube logo"
+                class="group-hover:scale-100"
+            /></a>
+            <a href="#" class="inline-block"
+              ><img
+                src="assets/images/icon-twitter.svg"
+                alt="twitter logo"
+                class="group-hover:scale-100"
+            /></a>
+            <a href="#" class="inline-block"
+              ><img
+                src="assets/images/icon-pinterest.svg"
+                alt="pinterest logo"
+                class="group-hover:scale-100"
+            /></a>
+            <a href="#" class="inline-block"
+              ><img
+                src="assets/images/icon-instagram.svg"
+                alt="instagram logo"
+                class="group-hover:scale-100"
+            /></a>
+          </div>
+        </div>
+        <!-- Quick Links gruop 1 -->
+        <div class="flex flex-col gap-6 text-center sm:text-left text-gray-300">
+          <a href="#" class="inline-block hover:text-green">About Us</a>
+          <a href="#" class="inline-block hover:text-green">Contact</a>
+          <a href="#" class="inline-block hover:text-green">Blog</a>
+        </div>
+        <!-- Quick Links gruop 2 -->
+        <div class="flex flex-col gap-6 text-center sm:text-left text-gray-300">
+          <a href="#" class="inline-block hover:text-green">Careers</a>
+          <a href="#" class="inline-block hover:text-green">Support</a>
+          <a href="#" class="inline-block hover:text-green">Privacy Policy</a>
+        </div>
+        <div
+          class="sm:col-span-2 flex items-center sm:items-start md:items-end flex-col gap-5"
+        >
+          <!--
+    Request Invite button  -->
+          <button
+            title="Click to Request Invite"
+            aria-label="Request Invite"
+            class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
+          >
+            Request Invite
+          </button>
+          <span class="text-gray-400">© Digitalbank. All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
     <!-- 
     sm	640px	@media (min-width: 640px) { ... }
    md	768px	@media (min-width: 768px) { ... }
