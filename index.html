@@ -131,51 +131,50 @@
       >
         <!-- text content -->
         <div
-          class="text-left sm:max-w-[29rem] mx-auto space-y-8 z-20 text-center md:text-left md:m-0 sm:mt-[38rem] mt-[20rem]"
+          class="z-50 text-left sm:max-w-[29rem] mx-auto space-y-8 z-20 text-center md:text-left md:m-0 sm:mt-[38rem] mt-[20rem]"
         >
-          <h1 class="z-20 text-5xl text-gray-800 tracking-tight leading-tight">
+          <h1 class="text-5xl text-gray-800 tracking-tight leading-tight">
             Next generation digital banking
           </h1>
           <p
-            class="text-gray-500 leading-tight sm:leading-relaxed max-w-[24rem] mx-auto md:mx-0 z-20"
+            class="text-gray-500 leading-tight sm:leading-relaxed max-w-[24rem] mx-auto md:mx-0"
           >
             Take your financial life online. Your Digitalbank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
           <button
-            title="Click to Request Invite z-20"
+            title="Click to Request Invite"
             aria-label="Request Invite"
-            class="bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
+            class="z-30 bg-gradient-to-bl from-green to-cyan hover:opacity-70 transition-all duration-300 text-sm px-7 py-2.5 tracking-wide rounded-full text-white font-semibold"
           >
             Request Invite
           </button>
         </div>
         <!-- image -->
-        <div>
-          <img
-            src="assets/images/bg-intro-desktop.svg"
-            alt="into desktop"
-            class="absolute -top-64 -right-[28.5rem] z-10 md:block hidden"
-          />
-          <img
-            src="assets/images/bg-intro-mobile.svg"
-            alt="into mobile bg"
-            class="absolute top-0 right-0 z-10 md:hidden"
-          />
-          <img
-            src="assets/images/image-mockups.png"
-            alt="mockups image"
-            class="absolute -top-40 md:-right-32 z-20 right-0"
-          />
-        </div>
+
+        <img
+          src="assets/images/bg-intro-desktop.svg"
+          alt="into desktop"
+          class="absolute -top-64 -right-[28.5rem] z-10 md:block hidden"
+        />
+        <img
+          src="assets/images/bg-intro-mobile.svg"
+          alt="into mobile bg"
+          class="absolute top-0 right-0 z-10 md:hidden"
+        />
+        <img
+          src="assets/images/image-mockups.png"
+          alt="mockups image"
+          class="absolute -top-40 md:-right-32 z-20 right-0"
+        />
       </div>
     </section>
     <!-- Why choose (features grid) -->
     <section id="featuresGrid" class="min-h-screen bg-gray-100 py-28 z-10">
-      <div class="container grid grid-col-1 gap-20 mx-auto p-2 md:p-8 xl:px-32">
+      <div class="container grid grid-col-1 gap-32 mx-auto p-2 md:p-8 xl:px-32">
         <!-- Why choose digitalbank container -->
-        <div class="space-y-8 text-center sm:text-left">
+        <div class="space-y-8 text-center md:text-left">
           <h2 class="text-4xl tracking-tight leading-tight text-gray-800">
             Why choose digitalbank?
           </h2>
@@ -272,6 +271,126 @@
         </div>
       </div>
     </section>
+
+    <!--  Latest Articles -->
+    <section id="featuresGrid" class="min-h-screen bg-gray-50 py-28 z-10">
+      <div class="container grid grid-col-1 gap-20 mx-auto p-2 md:p-8 xl:px-32">
+        <!-- Why choose digitalbank container -->
+        <div class="space-y-8 text-center md:text-left">
+          <h2 class="text-4xl tracking-tight leading-tight text-gray-800">
+            Latest Articles
+          </h2>
+        </div>
+        <!-- features grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-14 sm:gap-10"
+        >
+          <!-- item 1 -->
+          <div class="gap-4 flex items-center flex-col">
+            <!-- image -->
+            <div class="px-6 sm:px-0">
+              <img
+                src="assets/images/image-currency.jpg"
+                alt="online banking icon"
+                class="w-full object-cover sm:h-[13rem] rounded-t-md"
+              />
+            </div>
+            <!-- header -->
+            <div class="px-12 sm:px-6 text-left space-y-2">
+              <span class="text-sm text-gray-400 py-2 inline-block"
+                >By Claire Robinson</span
+              >
+              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+                Receive money in any currency with no fees
+              </h3>
+              <!-- paragraph -->
+              <p class="text-gray-500 leading-tight sm:leading-relaxed">
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="gap-4 flex items-center flex-col">
+            <!-- image -->
+            <div class="px-6 sm:px-0">
+              <img
+                src="assets/images/image-restaurant.jpg"
+                alt="online banking icon"
+                class="w-full object-cover sm:h-[13rem] rounded-t-md"
+              />
+            </div>
+            <!-- header -->
+            <div class="px-12 sm:px-6 text-left space-y-2">
+              <span class="text-sm text-gray-400 py-2 inline-block"
+                >By Wilson Hutton</span
+              >
+
+              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+                Treat yourself without worrying about money
+              </h3>
+              <!-- paragraph -->
+              <p class="text-gray-500 leading-tight sm:leading-relaxed">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="gap-4 flex items-center flex-col">
+            <!-- image -->
+            <div class="px-6 sm:px-0">
+              <img
+                src="assets/images/image-plane.jpg"
+                alt="online banking icon"
+                class="w-full object-cover sm:h-[13rem] rounded-t-md"
+              />
+            </div>
+            <!-- header -->
+            <div class="px-12 sm:px-6 text-left space-y-2">
+              <span class="text-sm text-gray-400 py-2 inline-block"
+                >By Wilson Hutton</span
+              >
+              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+                Take your Digitalbank card wherever you go
+              </h3>
+              <!-- paragraph -->
+              <p class="text-gray-500 leading-tight sm:leading-relaxed">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="gap-4 flex items-center flex-col">
+            <!-- image -->
+            <div class="px-6 sm:px-0">
+              <img
+                src="assets/images/image-confetti.jpg"
+                alt="online banking icon"
+                class="w-full rounded-t-md sm:h-[13rem] object-cover"
+              />
+            </div>
+
+            <!-- header -->
+            <div class="px-12 sm:px-6 text-left space-y-2">
+              <span class="text-sm text-gray-400 py-2 inline-block"
+                >By Claire Robinson</span
+              >
+              <h3 class="text-lg text-gray-800 leading-tight tracking-tight">
+                Our invite-only Beta accounts are now live!
+              </h3>
+              <!-- paragraph -->
+              <p class="text-gray-500 leading-tight sm:leading-relaxed">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 
     sm	640px	@media (min-width: 640px) { ... }
    md	768px	@media (min-width: 768px) { ... }
@@ -320,27 +439,6 @@
 
   
 
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Digitalbank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
 
   
 
