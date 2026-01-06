@@ -20,6 +20,7 @@
     <title>Digital bank</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="assets/scrcipts/script.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -42,7 +43,7 @@
     <!-- header -->
     <header id="header">
       <div
-        class="container z-50 mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
+        class="relative container z-50 mx-auto flex justify-between items-center p-8 py-4 xl:px-32"
       >
         <!-- logo -->
         <img src="assets/images/logo-dark.svg" alt="digital bank logo" />
@@ -106,8 +107,82 @@
             </li>
           </ul>
         </nav>
-        <!--
-    Request Invite button  -->
+        <!-- mobile screen nav menu -->
+        <div
+          id="mobile-menu-nav"
+          class="absolute hidden p-8 px-40 bg-gray-50 top-20 right-[50%] translate-x-[50%] transition-all duration-300 z-100 shadow-2xl rounded-md max-w-1/2"
+        >
+          <ul class="text-md flex flex-col text-center gap-5">
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-800 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Home
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-800 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                About
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-800 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Contact
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-800 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Blog
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a
+                href=""
+                class="py-1 font-semibold text-gray-800 inline-block transition-all duration-300 group-hover:text-gray-900 group-hover:text-opacity-70"
+              >
+                Careers
+              </a>
+              <div
+                class="w-0 h-[0.1rem] bg-green group-hover:w-full transition-all duration-300"
+              ></div>
+            </li>
+          </ul>
+        </div>
+        <!-- hamburger menu button -->
+        <button
+          id="hamburger-menu-btn"
+          class="md:hidden bg-transparent border-none"
+        >
+          <img
+            title="Open menu"
+            aria-label="open hamburger menu"
+            src="assets/images/icon-hamburger.svg"
+            alt="humburger menu icon"
+          />
+        </button>
+        <!-- Request Invite button  -->
         <button
           title="Click to Request Invite"
           aria-label="Request Invite"
